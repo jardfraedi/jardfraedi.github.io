@@ -2,36 +2,70 @@
 <html>
 <head>
 <style>
+	
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
 h1 {
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
-	background: rgba(0, 128, 0);
-	max-width:200px
+	letter-spacing: 1px;
+	padding: 15px 20px
+}
+
+#top {
+	background-color: green;
+	colour: #ffffff;
+	max-width: 500px;
+	padding: 15px;
 }
 body {
-	text-align: center;
-  background: url("background.png")
+  background: url("background.png");
+	font: Lucida Sans, Verdana
 }
 div {
-	max-width:70%
 	background: snow
 	}
+	
+#menubar {
+    	width: 200px;
+    	float: left
+}
+#main {
+	padding: 10px;
+    	margin: 0 210px;
+}
+	
 </style>
-
 </head>
+	
 <body>
-    <h1>Icelandic Geology</h1>
-<div>  
-  <p>This page gives links to all the pages that I have been working on, mostly related to the geology of Iceland. 
-      These are just for fun, with some light research going in to a few of them. </p>
+	
+<div class="container wrapper">	
+	<div id="top">
+    		<h1>Icelandic Geology</h1>  
+		<p>This page gives links to all the pages that I have been working on, mostly related to the geology of Iceland. These are just for fun, with some light research going in to a few of them. </p>
+	</div>
+	<div class="wrapper">
+		<div id="menu">
+		
+		</div>	
+		<div id="main">
+  			<a href="/hrutfjall"><img src="1.jpg" alt="hrutfjall" height="auto" width="auto"></a> <br>
+			– <a href="https://www.google.com/maps/place/Hr%C3%BAtfjallstindar/@64.010978,-16.8256507,4836a,35y,27.56h,46.23t/data=!3m1!1e3!4m5!3m4!1s0x48d0323cda4ca403:0x741713a7b3248d92!8m2!3d64.0492978!4d-16.7505884">Hrutfjall</a> panorama with geological interpretation
+  	
+			<p><a href="/islandskort">Early 1900's geological map of Iceland in 3D</a> – this is vertically exaggerated, made using is50v DEM and Thoroddsen 1901 geological map </p>
+  	
+			<a href="/iceland_d208pb">Spatial distribution map of variation in &#916;Pb208 in Icelandic rock samples </a>
+    	
+			<p> This map was complied in ArcGIS using spatial interpretation of data points collated together by the georoc database ad my own data. The data is from basaltic samples only, since we wanted to measure the variation in Pb208 in the Icelandic mantle with as little crustal contamination as possible.The map shows exactly what one would expect — a lower &#916;Pb208 in the south west than in the north, and the highest values restricted to the areas around the proposed mantle plume and where the deepest melting is occuring beneath Öræfajökull.
+    			</p>
+		</div>
 </div>
-<div>
-  <a href="/hrutfjall"><img src="1.jpg" alt="hrutfjall" height="10%" width="auto"></a> <br>
-	– <a href="https://www.google.com/maps/place/Hr%C3%BAtfjallstindar/@64.010978,-16.8256507,4836a,35y,27.56h,46.23t/data=!3m1!1e3!4m5!3m4!1s0x48d0323cda4ca403:0x741713a7b3248d92!8m2!3d64.0492978!4d-16.7505884">Hrutfjall</a> panorama with geological interpretation
-  <p><a href="/islandskort">Early 1900's geological map of Iceland in 3D</a> – this is vertically exaggerated, made using is50v DEM and Thoroddsen 1901 geological map </p>
-  <a href="/iceland_d208pb">Spatial distribution map of variation in &#916;Pb208 in Icelandic rock samples </a>
-    <p> This map was complied in ArcGIS using spatial interpretation of data points collated together by the georoc database ad my own data. 
-       The data is from basaltic samples only, since we wanted to measure the variation in Pb208 in the Icelandic mantle with as little crustal contamination as possible.
-       The map shows exactly what one would expect — a lower &#916;Pb208 in the south west than in the north, and the highest values restricted to the areas around the proposed mantle plume and where the deepest melting is occuring beneath Öræfajökull.
-    
-</p>
-</div>
+	
