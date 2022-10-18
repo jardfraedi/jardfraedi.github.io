@@ -1,5 +1,7 @@
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 	
 .container {
@@ -36,6 +38,28 @@ div#banner-content {
         letter-spacing: 2px;
 }
 
+	/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+	
 body {
 	font-family: Helvetica, sans-serif;
 	background-image: url("background.png");
@@ -59,7 +83,7 @@ body {
 	background-color: snow;
 	padding: 10px;
     	margin: 160 20 0 20px;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 
 .menuitem {  	
@@ -119,12 +143,8 @@ hr {
 			Hrutfjall is an impressive mountain in the south east of Iceland, forms part of the flank sequence of the Öræfajökull volcano. 
 			The link takes you to a panorama with geological interpretation information overlain. 
 			This mountain face formed to basis of a small project on the application of geological remote sensing to inaccessible areas of Iceland.<p>
-		</div>
-		<div id="main">
+		
 			This embedded frame shows Hrutfjall in a virtual outcrop model (Mavic Air 2S, Agisoft, V3Geo)</p><br>
-			<iframe  src="https://v3geo.com/viewer/index.html#/417"  title="Hrútfjallstindar | V3Geo"  
-				style="width: 100%; min-height: 300px;"  frameborder="0"/>
-  	</p>
 		<hr>
 	<p>
 			<h3><a href="/islandskort" target="_blank">Early 1900's geological map of Iceland in 3D</a></h3>
